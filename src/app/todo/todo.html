@@ -1,0 +1,4 @@
+<input type="text" (keyup)="onKey($event)" [value]="input">
+<button (click)="onclick()">Enter</button>
+<todoItem *ngFor="let note of notes; let i = index" (remove)="onDelete(i)" [note]="note">
+</todoItem>
